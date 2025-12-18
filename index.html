@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio | Prodi Sistem Informasi</title>
+
+  <!-- HEADER -->
+<header id="home">
+  <img src="foto-profil.jpg">
+
+
+  <h1>Rizal Fadillah Gunawan</h1>
+  <p>Prodi Sistem Informasi | Semester 3</p>
+  <link rel="stylesheet" href="style.css">
+
+</header>
+
+
+<!-- NAVIGATION -->
+<nav>
+  <ul>
+    <li><a href="#about">Tentang</a></li>
+    <li><a href="#projects">Project</a></li>
+    <li><a href="#contact">Kontak</a></li>
+  </ul>
+</nav>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>Tentang Saya</h2>
+  <div class="card">
+<p>
+      Saya adalah seorang mahasiswa Sistem Informasi semester 3 di Universitas Bina Sarana Informatika.
+      Portofolio ini dibuat dengan tujuan untuk mempertahakan beasiswa yang telah diberi oleh pengelola beasiswa di Universitas
+      Bina Sarana Informatika. Selain itu, portofolio ini juga ingin memberitahu kegiatan apa saja yang saya ikuti atau
+      partisipasi saya terhadap kegiatan yang diadakan selama satu semester ini. Berikut saya tampilkan beberapa kegiatan yang
+      saya ikutin selama semester 3 ini.
+    </p>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Kegiatan & Project Semester</h2>
+  <div class="grid gallery">
+    <div class="card">
+      <img src="kegiatan1.jpg" alt="Kegiatan 1">
+      <p>Panitia Seminar Kampus</p>
+    </div>
+    <div class="card">
+      <img src="kegiatan2.jpg" alt="Kegiatan 2">
+      <p>Pelatihan Web Development</p>
+</div>
+    <div class="card">
+      <img src="kegiatan3.jpg" alt="Kegiatan 3">
+      <p>Project Sistem Kasir</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Kontak & Masukan</h2>
+  <div class="card">
+    <p>Silahkan kirim masukan atau saran melalui form di bawah ini:</p>
+
+    <form onsubmit="kirimKeWA(event)">
+      <input type="text" id="nama" placeholder="Nama" required style="width:100%;padding:10px;margin:8px 0;">
+      <textarea id="pesan" placeholder="Masukan / Saran" required style="width:100%;padding:10px;margin:8px 0;" rows="4"></textarea>
+      <button type="submit">Kirim via WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Portofolio Rizal Fadillah Gunawan</p>
+</footer>
