@@ -1,5 +1,5 @@
 <script>
-  function kirimKeWA(event) 
+  function kirimKeWA(event) {
     event.preventDefault();
 
     const nama = document.getElementById("nama").value;
@@ -15,5 +15,6 @@ ${pesan}`;
     const url = `https://wa.me/${nomorWA}?text=${encodeURIComponent(text)}`;
 
     window.open(url, "_blank");
-    
-</script>
+    }
+</script>;
+
