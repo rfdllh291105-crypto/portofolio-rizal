@@ -41,39 +41,27 @@
 </section>
 
 <!-- PROJECTS -->
-<section id="projects">
-  <h2>Kegiatan & Project Semester</h2>
-  <div class="grid gallery">
-    <div class="card">
-      <img src="kegiatan1.jpg" alt="Kegiatan 1">
-      <p>Panitia Seminar Kampus</p>
+<section id="kegiatan">
+  <h2>Kegiatan Selama Semester</h2>
+
+  <div class="slider">
+    <button class="nav prev" onclick="prevSlide()">❮</button>
+
+    <div class="slide active">
+      <img src="foto/kegiatan1.jpg" alt="Kegiatan 1">
+      <p>Mengikuti seminar teknologi informasi tingkat nasional.</p>
     </div>
-    <div class="card">
-      <img src="kegiatan2.jpg" alt="Kegiatan 2">
-      <p>Pelatihan Web Development</p>
-</div>
-    <div class="card">
-      <img src="kegiatan3.jpg" alt="Kegiatan 3">
-      <p>Project Sistem Kasir</p>
+
+    <div class="slide">
+      <img src="foto/kegiatan2.jpg" alt="Kegiatan 2">
+      <p>Menjadi panitia kegiatan kampus bidang sistem informasi.</p>
     </div>
+
+    <div class="slide">
+      <img src="foto/kegiatan3.jpg" alt="Kegiatan 3">
+      <p>Mengerjakan project website sebagai tugas akhir semester.</p>
+    </div>
+
+    <button class="nav next" onclick="nextSlide()">❯</button>
   </div>
 </section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <h2>Kontak & Masukan</h2>
-  <div class="card">
-    <p>Silahkan kirim masukan atau saran melalui form di bawah ini:</p>
-
-    <form onsubmit="kirimKeWA(event)">
-  <input type="text" id="nama" placeholder="Nama Anda" required>
-
-  <textarea id="pesan" placeholder="Masukan Anda" required></textarea>
-
-  <button type="submit">Kirim Masukan</button>
-</form>
-
-<!-- FOOTER -->
-<footer>
-  <p>© 2025 Portofolio Rizal Fadillah Gunawan</p>
-</footer>
