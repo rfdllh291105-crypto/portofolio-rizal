@@ -1,20 +1,17 @@
-<script>
-  function kirimKeWA(event) {
-    event.preventDefault();
+  let currentSlide = 0;
+  const slides = document.querySelectorAll(".slide");
 
-    const nama = document.getElementById("nama").value;
-    const pesan = document.getElementById("pesan").value;
+  function showSlide(index) {
+    slides.forEach(slide => slide.classList.remove("active"));
+    slides[index].classList.add("active");
+  }
 
-    const nomorWA = "+6288210714192"; // nomor WA lu
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
 
-    const text = `Halo Rizal,
-
-Saya ${nama} ingin memberikan masukan:
-${pesan}`;
-
-    const url = `https://wa.me/${nomorWA}?text=${encodeURIComponent(text)}`;
-
-    window.open(url, "_blank");
-    }
-</script>;
-
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  }
